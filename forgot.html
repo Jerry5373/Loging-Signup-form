@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login or Signup</title>
+        <style>
+            body {
+                font-family: arial;
+                background-image: linear-gradient(170deg, rgb(144, 233, 248) 2%, rgb(234, 193, 233) 80%);
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 85.5px;
+                
+            }
+
+            h2 {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .login-form-container {
+                background-color:  white;
+                display: flex;
+                flex-direction: column;
+                height: 450px;
+                width: 260px;
+                padding: 10px 15px;
+                border-radius: 15px;
+                box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.5);
+            }
+
+            .security-question {
+                text-align: center;
+                background-color: lightyellow;
+                padding: 10px;
+                margin: 10px 0px;
+                font-weight: 600;
+            }
+
+            input {
+                height: 25px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                padding: 5px 15px;
+            }
+
+            p {
+                margin: 0px;
+
+            }
+
+            .submit-login-btn {
+                font-size: 18px;
+                background-color: rgb(255, 174, 0);
+                border: none;
+                padding: 7px 45px;
+                border-radius: 15px;
+                color: white;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .submit-login-btn:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+
+            .submit-login-btn:active {
+                opacity: 0.7;
+            }
+
+            #create {
+                text-align: center;
+                font-size: 13px;
+            }
+
+            #create:hover {
+                cursor: pointer;
+            }
+
+            #create:active {
+                opacity: 0.8;
+            }
+
+            span {
+                color: rgb(255, 174, 0);
+                font-weight: 700;
+            }
+
+            
+    
+        </style>
+    </head>
+    <body>
+        <div class="login-form-container">
+            <h2>RECOVER FORGOTTEN PASSWORD</h2>
+            <input id="email" type="email" placeholder="Email Address">
+            <p class="security-question">Security Question</p>
+            <input type="text" placeholder="Choose security Question">
+            <input type="text" placeholder="Answer">
+            <form method="post" enctype="text/plain">
+                <button type="submit" class="submit-login-btn" onclick="sendemail()">Recover Password</button>
+            </form>
+            <script>
+                let Email = document.getElementById("email")
+
+                function sendemail() {
+                    Email = OTP15052
+                    console.log(Email)
+                }
+                
+            </script>           
+            <p id="create">Do you know your password? <span  onclick="window.location.href='login.html'">Login</span></p>
+        </div>
+    </body>
+</html>
